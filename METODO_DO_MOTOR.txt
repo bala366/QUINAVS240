@@ -1,0 +1,24 @@
+QUINA CAMPEÃ - GRUPO FIXO DE 40 - V2
+========================================
+
+1) GRUPO CAMPEÃO FIXO
+O grupo abaixo fica congelado no código:
+04 05 06 09 10 11 13 14 15 21 23 24 26 29 30 31 33 36 38 39
+43 44 48 49 51 52 54 56 57 63 64 65 66 67 68 69 71 72 73 77
+
+2) FILTRO PADRÃO FIXO
+rep=0-1 | pares=2-4 | primos=0-2 | fib=0-1 | 01-40=2-4 | soma=155..249
+
+3) JOGO 1
+Gera as 658.008 combinações C(40,5), filtra e rankeia por força, ciclo e perímetro de duque.
+
+4) GRUPO MAIS ATRASADO
+A busca parte de centenas de sementes, melhora cada grupo por histórico de 5/5 e, entre grupos fortes, prioriza o maior atraso atual. Isso evita escolher como 'atrasado' um grupo ruim que quase nunca premiou. O piso histórico automático é 60% das ocorrências do grupo campeão na base carregada.
+
+5) JOGO 2
+Depois do grupo atrasado ser encontrado, gera as mesmas 658.008 combinações e usa exatamente a mesma peneira/ranking do Jogo 1.
+
+6) PDF
+Verde = jogo final. Vermelho = dezenas fora do grupo/falha. Branco = restante do grupo de 40.
+
+A busca do grupo atrasado é determinística para a mesma base: mesmas entradas produzem o mesmo grupo e o mesmo jogo.
